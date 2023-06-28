@@ -1,0 +1,26 @@
+{
+  "settings": {
+    "title": "Instellingen",
+    "token": "Token",
+    "supplier": "Leverancier",
+    "save": "Opslaan"
+  },
+
+  "suppliers": {
+    "aip": "All in power",
+    "anwb": "ANWB Energie",
+    "ee": "EasyEnergy",
+    "evo": "Energie VanOns",
+    "ez": "EnergyZero",
+    "fr": "Frank Energie",
+    "gsl": "Groenestroom Lokaal",
+    "mde": "Mijndomein Energie",
+    "ne": "NextEnergy",
+    "ti": "Tibber",
+    "vdb": "Vandebron",
+    "von": "Vrij op naam",
+    "zg": "ZonderGas",
+    "aaaaa": "aaaaa",
+    "zp": "Zonneplan"
+  }
+}
