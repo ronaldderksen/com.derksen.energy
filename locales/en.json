@@ -1,9 +1,10 @@
 {
   "settings": {
-    "title": "Instellingen",
+    "title": "Settings",
     "token": "Token",
-    "supplier": "Leverancier",
-    "save": "Opslaan"
+    "supplier": "Supplier",
+    "save": "Save",
+    "enever_title": "Enever 'Prijzenfeeds' settings"
   },
 
   "suppliers": {

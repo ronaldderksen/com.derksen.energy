@@ -1,3 +1,4 @@
 node_modules
 .homeybuild
 package-lock.json
+@eaDir

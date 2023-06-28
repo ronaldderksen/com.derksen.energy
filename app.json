@@ -1,14 +1,15 @@
 {
   "_comment": "This file is generated. Please edit .homeycompose/app.json instead.",
-  "id": "com.derksen.enever",
-  "version": "1.0.0",
+  "id": "com.derksen.energy",
+  "version": "0.1.0",
   "compatibility": ">=5.0.0",
   "sdk": 3,
   "platforms": [
     "local"
   ],
   "name": {
-    "en": "Enever prijzenfeed"
+    "en": "Dynamic electricity price",
+    "nl": "Dynamische stroomprijs "
   },
   "description": {
     "en": "Adds support for MyBrand devices."
@@ -25,5 +26,83 @@
   "author": {
     "name": "Ronald Derksen",
     "email": "ronald@derksen-it.nl"
+  },
+  "flow": {
+    "triggers": [
+      {
+        "title": {
+          "en": "Electricity price higher than",
+          "nl": "Stroomprijs hoger dan"
+        },
+        "titleFormatted": {
+          "en": "Electricity price higher than: [[electricity_price]]",
+          "nl": "Stroomprijs hoger dan: [[electricity_price]]"
+        },
+        "args": [
+          {
+            "type": "number",
+            "name": "electricity_price",
+            "placeholder": {
+              "en": "Electricity price",
+              "nl": "Stroomprijs"
+            },
+            "min": -5,
+            "max": 5
+          }
+        ],
+        "tokens": [
+          {
+            "type": "number",
+            "name": "electricity_price",
+            "title": {
+              "en": "Electricity price",
+              "nl": "Stroomprijs"
+            },
+            "example": {
+              "en": "Electricity price",
+              "nl": "Stroomprijs"
+            }
+          }
+        ],
+        "id": "electricity_price_higher_than"
+      },
+      {
+        "title": {
+          "en": "Electricity price lower than",
+          "nl": "Stroomprijs hoger dan"
+        },
+        "titleFormatted": {
+          "en": "Electricity price lower than: [[electricity_price]]",
+          "nl": "Stroomprijs hoger dan: [[electricity_price]]"
+        },
+        "args": [
+          {
+            "type": "number",
+            "name": "electricity_price",
+            "placeholder": {
+              "en": "Electricity price",
+              "nl": "Stroomprijs"
+            },
+            "min": -5,
+            "max": 5
+          }
+        ],
+        "tokens": [
+          {
+            "type": "number",
+            "name": "electricity_price",
+            "title": {
+              "en": "Electricity price",
+              "nl": "Stroomprijs"
+            },
+            "example": {
+              "en": "Electricity price",
+              "nl": "Stroomprijs"
+            }
+          }
+        ],
+        "id": "electricity_price_lower_than"
+      }
+    ]
   }
 }

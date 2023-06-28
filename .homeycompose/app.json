@@ -1,13 +1,14 @@
 {
-  "id": "com.derksen.enever",
-  "version": "1.0.0",
+  "id": "com.derksen.energy",
+  "version": "0.1.0",
   "compatibility": ">=5.0.0",
   "sdk": 3,
   "platforms": [
     "local"
   ],
   "name": {
-    "en": "Enever prijzenfeed"
+    "en": "Dynamic electricity price",
+    "nl": "Dynamische stroomprijs "
   },
   "description": {
     "en": "Adds support for MyBrand devices."
