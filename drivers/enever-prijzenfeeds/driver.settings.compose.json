@@ -1,0 +1,82 @@
+[
+  {
+    "id": "token",
+    "type": "text",
+    "label": { 
+      "en": "Token" 
+    },
+    "value": "token",
+    "hint": { 
+      "en": "The 'Enever prijzenfeeds' token" 
+    }
+  },
+  {
+    "id": "supplier",
+    "type": "dropdown",
+    "label": { 
+      "en": "Supplier"
+    },
+    "value": "zp",
+    "hint": { 
+      "en": "You supplier" 
+    },
+    "values": [
+      {
+        "id": "aip",
+        "label": { "en": "All in power" }
+      },
+      {
+        "id": "anwb",
+        "label": { "en": "ANWB Energie" }
+      },
+      {
+        "id": "ee",
+        "label": { "en": "EasyEnergy" }
+      },
+      {
+        "id": "evo",
+        "label": { "en": "Energie VanOns" }
+      },
+      {
+        "id": "ez",
+        "label": { "en": "EnergyZero" }
+      },
+      {
+        "id": "fr",
+        "label": { "en": "Frank Energie" }
+      },
+      {
+        "id": "gsl",
+        "label": { "en": "Groenestroom Lokaal" }
+      },
+      {
+        "id": "mde",
+        "label": { "en": "Mijndomein Energie" }
+      },
+      {
+        "id": "ne",
+        "label": { "en": "NextEnergy" }
+      },
+      {
+        "id": "ti",
+        "label": { "en": "Tibber" }
+      },
+      {
+        "id": "vdb",
+        "label": { "en": "Vandebron" }
+      },
+      {
+        "id": "von",
+        "label": { "en": "Vrij op naam" }
+      },
+      {
+        "id": "zg",
+        "label": { "en": "ZonderGas" }
+      },
+      {
+        "id": "zp",
+        "label": { "en": "Zonneplan" }
+      }
+    ]
+  }
+]

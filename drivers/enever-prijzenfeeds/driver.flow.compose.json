@@ -1,0 +1,78 @@
+{
+  "triggers": [
+    {
+      "title": {
+        "en": "Electricity price higher than",
+        "nl": "Stroomprijs hoger dan"
+      },
+      "titleFormatted": {
+        "en": "Electricity price higher than: [[electricity_price]]",
+        "nl": "Stroomprijs hoger dan: [[electricity_price]]"
+      },
+      "args": [
+        {
+          "type": "number",
+          "name": "electricity_price",
+          "placeholder": {
+            "en": "Electricity price",
+            "nl": "Stroomprijs"
+          },
+          "min": -5,
+          "max": 5
+        }
+      ],
+      "tokens": [
+        {
+          "type": "number",
+          "name": "electricity_price",
+          "title": {
+            "en": "Electricity price",
+            "nl": "Stroomprijs"
+          },
+          "example": {
+            "en": "Electricity price",
+            "nl": "Stroomprijs"
+          }
+        }
+      ],
+      "id": "electricity_price_higher_than"
+    },
+    {
+      "title": {
+        "en": "Electricity price lower than",
+        "nl": "Stroomprijs lager dan"
+      },
+      "titleFormatted": {
+        "en": "Electricity price lower than: [[electricity_price]]",
+        "nl": "Stroomprijs lager dan: [[electricity_price]]"
+      },
+      "args": [
+        {
+          "type": "number",
+          "name": "electricity_price",
+          "placeholder": {
+            "en": "Electricity price",
+            "nl": "Stroomprijs"
+          },
+          "min": -5,
+          "max": 5
+        }
+      ],
+      "tokens": [
+        {
+          "type": "number",
+          "name": "electricity_price",
+          "title": {
+            "en": "Electricity price",
+            "nl": "Stroomprijs"
+          },
+          "example": {
+            "en": "Electricity price",
+            "nl": "Stroomprijs"
+          }
+        }
+      ],
+      "id": "electricity_price_lower_than"
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 {
   "_comment": "This file is generated. Please edit .homeycompose/app.json instead.",
   "id": "com.derksen.energy",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "compatibility": ">=5.0.0",
   "sdk": 3,
   "platforms": [
@@ -40,6 +40,11 @@
         },
         "args": [
           {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=enever-prijzenfeeds"
+          },
+          {
             "type": "number",
             "name": "electricity_price",
             "placeholder": {
@@ -69,13 +74,18 @@
       {
         "title": {
           "en": "Electricity price lower than",
-          "nl": "Stroomprijs hoger dan"
+          "nl": "Stroomprijs lager dan"
         },
         "titleFormatted": {
           "en": "Electricity price lower than: [[electricity_price]]",
-          "nl": "Stroomprijs hoger dan: [[electricity_price]]"
+          "nl": "Stroomprijs lager dan: [[electricity_price]]"
         },
         "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=enever-prijzenfeeds"
+          },
           {
             "type": "number",
             "name": "electricity_price",
@@ -104,5 +114,177 @@
         "id": "electricity_price_lower_than"
       }
     ]
+  },
+  "drivers": [
+    {
+      "name": {
+        "en": "Enever prijzenfeeds"
+      },
+      "class": "other",
+      "capabilities": [
+        "electricity_price"
+      ],
+      "platforms": [
+        "local"
+      ],
+      "connectivity": [
+        "lan"
+      ],
+      "images": {
+        "small": "/drivers/enever-prijzenfeeds/assets/images/small.png",
+        "large": "/drivers/enever-prijzenfeeds/assets/images/large.png",
+        "xlarge": "/drivers/enever-prijzenfeeds/assets/images/xlarge.png"
+      },
+      "pair": [
+        {
+          "id": "list_devices",
+          "template": "list_devices",
+          "navigation": {
+            "next": "add_devices"
+          }
+        },
+        {
+          "id": "add_devices",
+          "template": "add_devices"
+        }
+      ],
+      "id": "enever-prijzenfeeds",
+      "settings": [
+        {
+          "id": "token",
+          "type": "text",
+          "label": {
+            "en": "Token"
+          },
+          "value": "token",
+          "hint": {
+            "en": "The 'Enever prijzenfeeds' token"
+          }
+        },
+        {
+          "id": "supplier",
+          "type": "dropdown",
+          "label": {
+            "en": "Supplier"
+          },
+          "value": "zp",
+          "hint": {
+            "en": "You supplier"
+          },
+          "values": [
+            {
+              "id": "aip",
+              "label": {
+                "en": "All in power"
+              }
+            },
+            {
+              "id": "anwb",
+              "label": {
+                "en": "ANWB Energie"
+              }
+            },
+            {
+              "id": "ee",
+              "label": {
+                "en": "EasyEnergy"
+              }
+            },
+            {
+              "id": "evo",
+              "label": {
+                "en": "Energie VanOns"
+              }
+            },
+            {
+              "id": "ez",
+              "label": {
+                "en": "EnergyZero"
+              }
+            },
+            {
+              "id": "fr",
+              "label": {
+                "en": "Frank Energie"
+              }
+            },
+            {
+              "id": "gsl",
+              "label": {
+                "en": "Groenestroom Lokaal"
+              }
+            },
+            {
+              "id": "mde",
+              "label": {
+                "en": "Mijndomein Energie"
+              }
+            },
+            {
+              "id": "ne",
+              "label": {
+                "en": "NextEnergy"
+              }
+            },
+            {
+              "id": "ti",
+              "label": {
+                "en": "Tibber"
+              }
+            },
+            {
+              "id": "vdb",
+              "label": {
+                "en": "Vandebron"
+              }
+            },
+            {
+              "id": "von",
+              "label": {
+                "en": "Vrij op naam"
+              }
+            },
+            {
+              "id": "zg",
+              "label": {
+                "en": "ZonderGas"
+              }
+            },
+            {
+              "id": "zp",
+              "label": {
+                "en": "Zonneplan"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "capabilities": {
+    "electricity_price": {
+      "type": "number",
+      "title": {
+        "en": "Electricity price"
+      },
+      "uiComponent": "sensor",
+      "getable": true,
+      "setable": false,
+      "units": {
+        "en": "€"
+      }
+    },
+    "gas_price": {
+      "type": "number",
+      "title": {
+        "en": "Electricity price"
+      },
+      "uiComponent": "sensor",
+      "getable": true,
+      "setable": false,
+      "units": {
+        "en": "€"
+      }
+    }
   }
 }

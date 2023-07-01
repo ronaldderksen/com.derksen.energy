@@ -1,0 +1,12 @@
+{
+  "type": "number",
+  "title": { 
+    "en": "Electricity price" 
+  },
+  "uiComponent": "sensor",
+  "getable": true,
+  "setable": false,
+  "units": { 
+    "en": "€" 
+  }
+}
